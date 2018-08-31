@@ -55,7 +55,7 @@ python app.py
 Build docker image:
 
 ```
-docker build -t stacky-slackbot --build-arg SLACK_SIGNING_SECRET=<SLACK_SIGNING_SECRET> --build-arg  SLACK_BOT_TOKEN=<SLACK_BOT_TOKEN> --build-arg STACKY_API_ADDRESS .
+docker build -t stacky-slackbot --build-arg SLACK_SIGNING_SECRET=<SLACK_SIGNING_SECRET> --build-arg  SLACK_BOT_TOKEN=<SLACK_BOT_TOKEN> --build-arg STACKY_API_ADDRESS=<STACKY_API_ADDRESS> .
 ```
 
 Replace `<SLACK_BOT_TOKEN>` and `<SLACK_SIGNING_SECRET>` with values you obtained in the section [Slack App](#slack-app). `<STACKY_API_ADDRESS>` is the address of the Stacky Answer Engine API.
