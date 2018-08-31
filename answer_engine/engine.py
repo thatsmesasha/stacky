@@ -7,9 +7,13 @@ import scipy
 import nltk
 nltk.download('punkt')
 
+print('Loading model...')
 model = Doc2Vec.load('model_doc2vec/complete.model')
+print('Loading dataframe...')
 train_df = pd.read_json('data/train_qa_with_ids.json').sort_index()
+print('Loading question vectors...')
 all_q_vectors = np.load('data/train_q_numpy_vectors.npy')
+print('Answer Engine ready')
 
 
 def clean_html(text):
